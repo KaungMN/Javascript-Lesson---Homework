@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 7</title>
+  </head>
+  <body>
+    <body style="background-color: darkslategray; color: white">
+      <h1>City</h1>
+      <p>Tokyo</p>
+      <button id="Japan" type="button" onclick="calculate()">Change</button>
+      <script>
+        function calculate() {
+          const number = [4, 3, 9, 17, 25, "Kaung"];
+          const pet = ["dog", "cat", "bird", "rabbit", "bear", null, undefined];
+          const car = [
+            { type: "BMW", year: 2012 },
+            { type: "Vovl", year: 2014 },
+            { type: "Toyota", year: 2011 },
+          ];
+          const findCar = car.find(great).year;
+          function great(value, index, array) {
+            return value.year == 2012;
+          }
+          console.log(findCar);
+
+          const personList = [
+            {
+              name: "Aung Aung",
+              familyMemberList: [
+                { name: "Aye", age: 10 },
+                { name: "Mya", age: 20 },
+              ],
+            },
+            {
+              name: "Maung Maung",
+              familyMemberList: [
+                { name: "Shwe", age: 12 },
+                { name: "Moe", age: 15 },
+              ],
+            },
+          ];
+          // const findFamily = personList.find(search);
+          // function search(value) {
+          //     value.name == "Aye";
+          // }
+          // console.log(findFamily);
+          // const findArray = personList.forEach(find);
+          // function find(value) {
+          //   value.familyMemberList.age + 5;
+          // }
+          // console.log(findArray);
+          const findArray = [];
+          personList.forEach(function (value) {
+            const sum = value.familyMemberList.map(function (member) {
+              member.age += 5;
+              member.name += " Kyaw";
+              return member;
+            });
+            findArray.push(sum);
+          });
+          console.log(findArray);
+          // personList.forEach(function(value));
+
+          const d = new Date(-1);
+          //   console.log(d);
+
+          // time စပေါ်တဲ့အချိန်
+          // gmt nae utc ကွာခြားချက်
+          // yy, mm, dd to dd, mm, yy
+          // for loop နဲ့စမ်း အိမ်စာ
+          // get date, get year
+          console.log(Math.E);
+          
+        }
+      </script>
+    </body>
+  </body>
+</html>

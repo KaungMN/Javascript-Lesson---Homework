@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Day 8</title>
+  </head>
+  <body>
+    <body style="background-color: lightslategrey; color: white">
+      <h1>City</h1>
+      <p>Tokyo</p>
+      <p id="demo"></p>
+      <p>Hello GitHub.</p>
+      <button id="Japan" type="button" onclick="calculate()">Surprise</button>
+      <script>
+        function calculate() {
+          let myFunction = (a, b) => a * b;
+          let result = myFunction(2, 3);
+          console.log(myFunction(4, 7));
+          //   let name = "John";
+          //   const myPromise = new Promise((resolve, reject) => {
+          //     if (name === "John") {
+          //       setTimeout(() => {
+          //         resolve(name);
+          //       }, 3000);
+          //       //   resolve(name);
+          //       return;
+          //     }
+          //     reject("This is not John");
+          //   });
+          //   //   console.log(myPromise);
+          //   console.log(
+          //     myPromise
+          //       .then((result) => {
+          //         console.log(result);
+          //         return `This is ${result}`;
+          //       })
+          //       .then((result) => console.log(result, " 2"))
+          //       .catch((err) => console.log(err))
+          //   );
+          const myDisplay = async () => {
+            let myPromise = new Promise((myResolve, myReject) => {
+              setTimeout(() => {
+                myResolve("Welcome!!!");
+              }, 3000);
+            });
+            let result = document.getElementById("demo");
+            let resultPromise = document.createElement("div");
+            resultPromise.innerHTML = await myPromise;
+            result.appendChild(resultPromise);
+          };
+          myDisplay();
+        }
+        // try catch နဲ့စမ်း
+        // git flow
+        // ES တွေကြည့်
+        // UI ရေးရန်
+      </script>
+    </body>
+  </body>
+</html>

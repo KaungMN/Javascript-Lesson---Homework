@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise</title>
+  </head>
+  <body>
+    <body style="background-color: darkslategray; color: white">
+      <h1>City</h1>
+      <p>Tokyo</p>
+      <button id="Japan" type="button" onclick="calculate()">Change</button>
+      <script>
+        function calculate() {
+          // let sum = number.reduceRight(mySum);
+          // function mySum(total, value, index, array) {
+          //   return total + index + value * total / value;
+          // }
+          // let isEven = number.every(checker);
+          // function checker(element,placement) {
+          //   return element % 2 == 0 && placement <=3;
+          // }
+          // console.log(isEven);
+          // console.log(number.reduce(total));
+          // function total(hello, superMan) {
+          //   return hello + superMan;
+          // }
+
+          // let superCheck = number.every(isEven);
+          // function isEven(value) {
+          //   return value > 3;
+          // }
+          // console.log(superCheck);
+          const number = [4, 3, 9, 17, 25, "Kaung"];
+          const pet = ["dog", "cat", "bird", "rabbit", "bear", null, undefined];
+          // let allPet = pet.reduce(combine);
+          // function combine(total, value) {
+          //   return total + value;
+          // }
+          // console.log(allPet);
+          // console.log(pet.indexOf(null + 1));
+          // console.log(pet.lastIndexOf("cat"));
+          // console.log(pet.indexOf("dog",0));
+          // console.log(pet.includes("dog"));
+          // let findNum = number.find(great);
+          // function great(value, index) {
+          //   return index > 3;
+          // }
+          // console.log(findNum);
+          // let findIndex = number.findIndex(notGreat);
+          // function notGreat(value) {
+          //   return value > 9;
+          // }
+          // console.log(findIndex);
+          console.log(new Date());
+          let sum = number.reduce(allNum);
+          function allNum(total,value){
+            return total - value;
+          }
+          console.log(sum);
+        }
+      </script>
+    </body>
+  </body>
+</html>

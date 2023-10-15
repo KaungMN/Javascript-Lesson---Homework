@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Work Assignment</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="stylesheet" href="CSS/1.Work Assignment.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="Number.html">Number</a>
+      <a href="Factorial.html">Factorial</a>
+      <a href="Work Assignment.html">To-do list</a>
+    </div>
+    <form id="toDoForm" class="row" onsubmit="addToDoList()">
+      <section class="col1">
+        <div class="form">
+          <div class="formEle">
+            <label class="label25" for="fullname">Name :</label>
+            <input
+              class="input75"
+              type="text"
+              id="fullname"
+              name="name"
+              placeholder="Your Name..."
+            />
+          </div>
+          <div class="formEle">
+            <label class="label25" for="priority">Priority :</label>
+            <select class="input75" id="priority" name="priority">
+              <option value="Low">Low</option>
+              <option value="Medium">Medium</option>
+              <option value="High">High</option>
+              <option value="Urgent">Urgent</option>
+            </select>
+          </div>
+          <div class="formEle">
+            <label class="label25" for="toDo">To do :</label>
+            <input
+              class="input75"
+              type="text"
+              id="toDo"
+              name="toDo"
+              placeholder="What is your Job?"
+              style="height: 100px"
+            />
+          </div>
+          <div class="formEle">
+            <button class="addButton" type="submit">Add</button>
+          </div>
+        </div>
+      </section>
+      <div class="col2">
+        <div id="disappearItem"> Please add something...</div>
+        <div class="listContainer" id="jobAdded"></div>
+      </div>
+    </form>
+    <script src="Javascript/to-do-list.js"></script>
+  </body>
+</html>

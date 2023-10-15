@@ -1,0 +1,134 @@
+body {
+  background-color: rgba(30, 143, 255, 0.729);
+  color: black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: rgba(15, 74, 134, 0.729);
+}
+
+.topnav a {
+  float: right;
+  color: rgb(160, 232, 88);
+  text-align: center;
+  padding: 14px 20px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: rgb(160, 232, 88);
+  color: black;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.col1 {
+  flex: 1;
+}
+
+.col2 {
+  flex: 2;
+  align-items: center;
+  justify-content: center;
+}
+
+.form {
+  padding: 60px;
+}
+
+.label25 {
+  display: inline-block;
+  width: 70px;
+  padding: 5px;
+}
+
+.input75 {
+  display: inline-block;
+  width: 270px;
+  background-color: white;
+  padding: 10px;
+  border-radius: 10px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+#priority {
+  width: 293px;
+}
+
+.addButton {
+  width: 293px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 80px;
+  background-color: rgb(160, 232, 88);
+  padding: 10px;
+  border-radius: 10px;
+  border-style: none;
+}
+@media (max-width: 1490px) {
+  .addButton {
+    margin-left: auto;
+  }
+}
+
+@media (max-width: 640px) {
+  .row {
+    flex-direction: column;
+  }
+  .addButton {
+    float: right;
+  }
+  .listAdded {
+    width: 100%;
+  }
+}
+
+.listAdded {
+  background-color: rgb(160, 232, 88);
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 20px;
+  margin-right: 20px;
+  border-radius: 20px;
+}
+
+.listAdded:hover {
+  background-color: rgba(15, 74, 134, 0.729);
+  color: rgb(160, 232, 88);
+}
+
+.output {
+  display: inline-block;
+  word-wrap: break-word;
+  width: 60px;
+  padding: 5px;
+}
+
+#disappearItem{
+
+  text-align: center;
+  width: 300px;
+  height: 60px;
+  background-color: rgb(160, 232, 88);
+  padding: 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  margin-left: 50px;
+  margin-right: 20px;
+  border-radius: 20px;
+}

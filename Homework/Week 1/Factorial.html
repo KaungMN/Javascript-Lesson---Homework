@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Factorial</title>
+    <link rel="stylesheet" href="CSS/Factorial.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="Number.html">Number</a>
+      <a href="Factorial.html">Factorial</a>
+      <a href="Work Assignment.html">To-do list</a>
+    </div>
+    <h1 style="text-align: center">Factorial</h1>
+    <div class="numberContainer">
+      <div class="numberChild">
+        <div class="numberCol">
+          <form id="factorialForm" action="" onsubmit="calculateFactorial()">
+            <input
+              class="input-number"
+              type="number"
+              id="factorialInput"
+              name="factorial number"
+              title="number only"
+              max="1000"
+            />
+            <button id="button" type="submit">Submit</button>
+          </form>
+        </div>
+      </div>
+      <div class="numberChild">
+        <div class="numberCol">
+          <p type="text" id="factorialResult">The result of number...</p>
+        </div>
+      </div>
+    </div>
+    <script src="Javascript/factorial.js"></script>
+  </body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Number</title>
+    <link rel="stylesheet" href="CSS/Number.css" />
+  </head>
+  <body>
+    <div class="topnav">
+      <a href="Number.html">Number</a>
+      <a href="Factorial.html">Factorial</a>
+      <a href="Work Assignment.html">To-do list</a>
+    </div>
+    <h1 style="text-align: center">Numbers</h1>
+    <form id="numberForm" action="" class="numberContainer" onsubmit="calculateNumber()">
+      <div class="numberChild">
+        <div class="numberCol">
+          <p for="startNumber">Start Number</p>
+          <p>
+            <input
+              class="inputNumber"
+              type="number"
+              id="startNumber"
+              name="start number"
+            />
+          </p>
+        </div>
+      </div>
+      <div class="numberChild">
+        <div class="numberCol">
+          <p for="endNumber">End Number</p>
+          <p>
+            <input
+              class="inputNumber"
+              type="number"
+              id="endNumber"
+              name="end number"
+            />
+          </p>
+        </div>
+      </div>
+      <div class="numberChild">
+        <div></div>
+        <button type="submit">Submit</button>
+      </div>
+      <div class="numberChild">
+        <div>
+          <select id="evenOdd" name="even odd select">
+            <option value="1">Even</option>
+            <option value="0">Odd</option>
+          </select>
+        </div>
+      </div>
+      <div class="numberChild">
+        <div class="numberCol">
+          <label>Result:</label>
+          <textarea placeholder="Result is here" type="text" id="numberResult"></textarea>
+        </div>
+      </div>
+    </form>
+    <script src="Javascript/number.js"></script>
+  </body>
+</html>

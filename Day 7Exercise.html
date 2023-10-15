@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercise 7</title>
+  </head>
+  <body>
+    <body style="background-color: cornflowerblue; color: white">
+      <h1>City</h1>
+      <p>Tokyo</p>
+      <button id="Japan" type="button" onclick="calculate()">Change</button>
+      <script>
+        function calculate() {
+          const person = [
+            {
+              name: "Aung Aung",
+              age: 20,
+              familyMember: [
+                { familyRelationship: "father", name: "Ba Nyein", age: 54 },
+                { familyRelationship: "mother", name: "Thida", age: 48 },
+                { familyRelationship: "sister", name: "Thiri", age: 15 },
+              ],
+            },
+            {
+              name: "Zaw Ko",
+              age: 18,
+              familyMember: [
+                { familyRelationship: "father", name: "Kyaw Myo", age: 50 },
+                { familyRelationship: "mother", name: "May Thu", age: 46 },
+                {
+                  familyRelationship: "brother",
+                  name: "Phyo Maung",
+                  age: 23,
+                },
+              ],
+            },
+          ];
+          const result = [];
+          for (let searchFamilyMember of person) {
+            const familyMemberArray = searchFamilyMember.familyMember;
+            for (let eachMember of familyMemberArray) {
+              const agePlus5 = eachMember.age;
+              eachMember.age += 5;
+              eachMember.name = "John " + eachMember.name;
+              eachMember.familyRelationship =
+                "god " + eachMember.familyRelationship;
+            }
+            result.push(familyMemberArray);
+          }
+
+          console.log(result);
+          const date = new Date();
+          const year = date.getFullYear();
+          const month = date.getMonth() + 1;
+          const day = date.getDate();
+          const newDate = year + "/" + month + "/" + day;
+          const functionDate = day + "/" + month + "/" + year;      
+          const options = {
+          weekday: "long",
+            year: "numeric",
+            month: "numeric",
+            day: "numeric",
+            hour: "numeric",
+            minute: "numeric",
+          };
+          console.log(newDate);
+          console.log(functionDate + "  With Function");
+          console.log(
+            date.toLocaleDateString("en-GB") + "  With LocaleDateString"
+          );
+          console.log(date.toLocaleDateString("en-GB", options));
+          console.log(new Date());
+          console.log(date.getFullYear());
+        }
+      </script>
+    </body>
+  </body>
+</html>
